@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Home Page</title>    
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+
+        <!-- Example single danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Accounts
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="accounts/login">Login Page</a></li>
+    <li><a class="dropdown-item" href="#">Register Page</a></li>
+    <li><a class="dropdown-item" href="#">Logout</a></li>
+        <li><hr class="dropdown-divider"></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Sales 
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="accounts/login">Laptops</a></li>
+    <li><a class="dropdown-item" href="#">Mobiles</a></li>
+    <li><a class="dropdown-item" href="#">Tablets</a></li>
+        <li><hr class="dropdown-divider"></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Purchage 
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="accounts/login">Books</a></li>
+    <li><a class="dropdown-item" href="#">Pens</a></li>
+    <li><a class="dropdown-item" href="#">Pencils</a></li>
+        <li><hr class="dropdown-divider"></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Payments
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="accounts/login">SBI</a></li>
+    <li><a class="dropdown-item" href="#">Indian Bank</a></li>
+    <li><a class="dropdown-item" href="#">ICICI Bank</a></li>
+        <li><hr class="dropdown-divider"></li>
+  </ul>
+</div>
+<!-- 
+<div class="btn-group" role="group" aria-label="Basic mixed styles example">
+  <button type="button" class="btn btn-danger"><a href="accounts/login">Accounts</a></button>
+    <button type="button" class="btn btn-warning"><a href="sales.html">Sales</a></button>
+    <button type="button" class="btn btn-success"><a href="purchase.html">Purchase</a></button>
+    <button type="button" class="btn btn-info"><a href="payment.html">Payments</a></button>
+</div>
+        <nav>
+            <a href="accounts/login">Accounts</a> |
+            <a href="sales.html">Sales</a> |
+            <a href="purchage.html">Purchase</a> |
+            <a href="payment.html">Payments</a> |
+        </nav>
+    -->
+    </header>
+    
+
+    <!-- Main content section -->
+    <main>
+        <h2>About Us</h2>
+        <p>This is the homepage of our website. We provide quality information and services.</p>
+        
+        <img src="{% static 'images/sample.jpg' %}" alt="Description of image" width="100" height="100">
+        <img src="{% static 'images/hero-bg.jpg' %}" alt="Hero Background" width="100" height="100">
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Our Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
